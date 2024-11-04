@@ -1,5 +1,4 @@
-//import Image from "next/image";
-//import ProductDesigner from "@/components/Product Designer/ProductDesigner";
+import React from 'react';
 import Layout from '../components/Layout';
 import Hero from '../components/Hero';
 import Services from '../components/Services';
@@ -9,7 +8,8 @@ import Portfolio from '../components/Portfolio';
 import Testimonials from '../components/Testimonials';
 import ContactForm from '../components/ContactForm';
 import BlogPosts from '../components/BlogPosts';
-export default function Home() {
+
+const Home: React.FC = () => {
   return (
     <Layout>
       <Hero />
@@ -23,4 +23,6 @@ export default function Home() {
       <BlogPosts />
     </Layout>
   );
-}
+};
+
+export default Home;
