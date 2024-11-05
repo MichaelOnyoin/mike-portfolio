@@ -7,7 +7,7 @@ interface ServiceCardProps {
 }
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ title, imageSrc, iconSrc }) => (
-  <div className="flex relative gap-2.5 items-start min-w-[240px] w-[416px]">
+  <div className="flex relative gap-2.5 items-start min-w-[240px] w-[416px]" id='service'>
     <div className="flex z-0 flex-col self-end text-3xl font-medium tracking-tight text-white min-w-[240px] w-[416px]">
       <div className="flex relative flex-col pt-11 w-full aspect-[0.819] rounded-[37px_37px_37px_37px]">
         <img loading="lazy" src={imageSrc} alt={`${title} background`} className="object-cover absolute inset-0 size-full" />

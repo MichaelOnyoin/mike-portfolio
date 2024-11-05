@@ -19,3 +19,53 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+.marquee {
+  position: relative;
+  overflow: hidden;
+  --offset: 20vw;
+  --move-initial: calc(-25% + var(--offset));
+  --move-final: calc(-50% + var(--offset));
+}
+
+.marquee__inner {
+  width: fit-content;
+  display: flex;
+  position: relative;
+  transform: translate3d(var(--move-initial), 0, 0);
+  animation: marquee 5s linear infinite;
+  animation-play-state: paused;
+  animation-duration: 18s;
+  
+}
+
+.marquee span {
+  font-size: 3vw;
+  padding: 0 1vw;
+  
+ 
+  
+}
+
+.marquee:hover .marquee__inner {
+  animation-play-state: running;
+ 
+}
+
+#slant{
+  -moz-transform: rotate(-10deg); /*Mozilla */
+   transform: rotate(-10deg);
+   -ms-transform: rotate(-10deg); /* IE 9 */
+   -webkit-transform: rotate(-10deg);
+}
+
+/* @keyframes marquee {
+  0% {
+      transform: translate3d(var(--move-initial), 0, 0);
+  }
+
+  100% {
+      transform: translate3d(var(--move-final), 0, 0);
+  }
+} */
