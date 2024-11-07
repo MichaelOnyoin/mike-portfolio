@@ -36,7 +36,7 @@ body {
   transform: translate3d(var(--move-initial), 0, 0);
   animation: marquee 5s linear infinite;
   animation-play-state: paused;
-  animation-duration: 18s;
+  animation-duration: 16s;
   
 }
 
@@ -54,13 +54,13 @@ body {
 }
 
 #slant{
-  -moz-transform: rotate(-10deg); /*Mozilla */
-   transform: rotate(-10deg);
-   -ms-transform: rotate(-10deg); /* IE 9 */
-   -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-3deg); /*Mozilla */
+   transform: rotate(-3deg);
+   -ms-transform: rotate(-3deg); /* IE 9 */
+   -webkit-transform: rotate(-3deg);
 }
 
-/* @keyframes marquee {
+ /* @keyframes marquee {
   0% {
       transform: translate3d(var(--move-initial), 0, 0);
   }
@@ -68,4 +68,14 @@ body {
   100% {
       transform: translate3d(var(--move-final), 0, 0);
   }
-} */
+}  */
+
+@keyframes marquee {
+  from {
+      transform: translateX(100%);
+  }
+  to {
+      transform: translateX(-100%);
+  }
+}
+

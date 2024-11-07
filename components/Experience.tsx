@@ -20,9 +20,9 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({ company, location, peri
 
 const Experience: React.FC = () => {
   const experiences = [
-    { company: "Cognizant", location: "Mumbai", period: "Sep 2016- July 2020", role: "Experience Designer", isActive: true },
-    { company: "Sugee Pvt limited", location: "Mumbai", period: "Sep 2020- July 2023", role: "UI/UX Designer", isActive: false },
-    { company: "Cinetstox", location: "Mumbai", period: "Sep 2023", role: "Lead UX Designer", isActive: true }
+    { company: "Coach Coegi", location: "India (Remote)", period: "Nov 2022- to Date", role: "Virtual Assitant", isActive: true },
+    { company: "HLB Jim Roberts", location: "Kampala", period: "Sep 2024- to Date", role: "Digital Marketer/ Accountant", isActive: false },
+    { company: "Penghis Ltd", location: "Kampala", period: "Feb 2021- Nov 2023 ", role: "Project Coordinator", isActive: true }
   ];
 
   return (

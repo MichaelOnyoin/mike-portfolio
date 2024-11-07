@@ -10,19 +10,19 @@ const HireMe: React.FC = () => {
             Why <span className="text-orange-400">Hire me</span>?
           </h2>
           <p className="mt-12 text-xl tracking-tight text-gray-400 max-md:mt-10 max-md:max-w-full">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus nunc, posuere in justo vulputate, bibendum sodales
+          Attempting to contribute in a creative,diligent, competent, persistent, and team-building manner to accomplish the organization's goals with the utmost care and integrity
           </p>
           <div className="flex flex-wrap gap-2.5 items-start mt-12 w-full max-md:mt-10 max-md:max-w-full">
             <div className="flex flex-col flex-1 shrink basis-0 min-w-[240px]">
-              <div className="text-4xl font-medium tracking-tight text-slate-800">450+</div>
+              <div className="text-4xl font-medium tracking-tight text-slate-800">50+</div>
               <div className="mt-2.5 text-xl tracking-tight text-gray-500">Project Completed</div>
             </div>
             <div className="flex flex-col flex-1 shrink basis-0 min-w-[240px]">
-              <div className="text-4xl font-medium tracking-tight text-slate-800">450+</div>
+              <div className="text-4xl font-medium tracking-tight text-slate-800">50+</div>
               <div className="mt-2.5 text-xl tracking-tight text-gray-500">Project Completed</div>
             </div>
           </div>
-          <button className="self-start px-14 py-8 mt-12 text-3xl font-semibold tracking-tight border border-solid border-neutral-900 rounded-[32px] text-neutral-900 max-md:px-5 max-md:mt-10">
+          <button className="self-start px-14 py-8 mt-12 text-3xl font-semibold tracking-tight border border-solid border-neutral-900 rounded-[32px] text-neutral-900 hover:bg-orange-500 max-md:px-5 max-md:mt-10">
             Hire me
           </button>
         </div>

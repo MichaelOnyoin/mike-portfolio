@@ -4,8 +4,8 @@
   white-space: nowrap;
   width: 100%;
   border: 2px solid red; /* Optional: for visibility */
-/* } 
-*/ 
+  /*/
+ 
 
 .marquee__item {
   animation: marquee 20s linear infinite;

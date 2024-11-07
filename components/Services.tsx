@@ -26,9 +26,10 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, imageSrc, iconSrc }) =
 
 const Services: React.FC = () => {
   const services = [
-    { title: "UI/ UX Design", imageSrc: "https://cdn.builder.io/api/v1/image/assets/1391f202a6104b468a8033acf7e36115/f6d29b44d119f4216b0dbba632ccf0e2524fb94a794c6ac8e6a8f183e7f1dbc2?apiKey=2c0ef7d7caa24d8d8c04d3962010fc58&", iconSrc: "https://cdn.builder.io/api/v1/image/assets/1391f202a6104b468a8033acf7e36115/a90078884d5286afe0275ec2e5d1133738f2b4656d28c7f33ae9e5dd5654b295?apiKey=2c0ef7d7caa24d8d8c04d3962010fc58&" },
-    { title: "Web Design", imageSrc: "https://cdn.builder.io/api/v1/image/assets/1391f202a6104b468a8033acf7e36115/2d486f196f66e8e6bcf484f14ba48b43f46c716353e8070ddfe3a853ca4c83d3?apiKey=2c0ef7d7caa24d8d8c04d3962010fc58&", iconSrc: "https://cdn.builder.io/api/v1/image/assets/1391f202a6104b468a8033acf7e36115/65f963ad014dd5875a3f924860fcd01c1734109cd97b5b00d9786c97270b3a2c?apiKey=2c0ef7d7caa24d8d8c04d3962010fc58&" },
-    { title: "Landing Page", imageSrc: "https://cdn.builder.io/api/v1/image/assets/1391f202a6104b468a8033acf7e36115/27a83de7dea093f45141f30be968cd0175538966adf6d95d6778a14253a0e412?apiKey=2c0ef7d7caa24d8d8c04d3962010fc58&", iconSrc: "https://cdn.builder.io/api/v1/image/assets/1391f202a6104b468a8033acf7e36115/a90078884d5286afe0275ec2e5d1133738f2b4656d28c7f33ae9e5dd5654b295?apiKey=2c0ef7d7caa24d8d8c04d3962010fc58&" }
+    { title: "Digital Marketing", imageSrc: "https://cdn.builder.io/api/v1/image/assets/1391f202a6104b468a8033acf7e36115/f6d29b44d119f4216b0dbba632ccf0e2524fb94a794c6ac8e6a8f183e7f1dbc2?apiKey=2c0ef7d7caa24d8d8c04d3962010fc58&", iconSrc: "https://cdn.builder.io/api/v1/image/assets/1391f202a6104b468a8033acf7e36115/a90078884d5286afe0275ec2e5d1133738f2b4656d28c7f33ae9e5dd5654b295?apiKey=2c0ef7d7caa24d8d8c04d3962010fc58&" },
+    { title: "Accounting", imageSrc: "https://cdn.builder.io/api/v1/image/assets/1391f202a6104b468a8033acf7e36115/2d486f196f66e8e6bcf484f14ba48b43f46c716353e8070ddfe3a853ca4c83d3?apiKey=2c0ef7d7caa24d8d8c04d3962010fc58&", iconSrc: "https://cdn.builder.io/api/v1/image/assets/1391f202a6104b468a8033acf7e36115/65f963ad014dd5875a3f924860fcd01c1734109cd97b5b00d9786c97270b3a2c?apiKey=2c0ef7d7caa24d8d8c04d3962010fc58&" },
+    { title: "Event Planning", imageSrc: "https://cdn.builder.io/api/v1/image/assets/1391f202a6104b468a8033acf7e36115/27a83de7dea093f45141f30be968cd0175538966adf6d95d6778a14253a0e412?apiKey=2c0ef7d7caa24d8d8c04d3962010fc58&", iconSrc: "https://cdn.builder.io/api/v1/image/assets/1391f202a6104b468a8033acf7e36115/a90078884d5286afe0275ec2e5d1133738f2b4656d28c7f33ae9e5dd5654b295?apiKey=2c0ef7d7caa24d8d8c04d3962010fc58&" },
+    { title: "Coaching", imageSrc: "https://cdn.builder.io/api/v1/image/assets/1391f202a6104b468a8033acf7e36115/27a83de7dea093f45141f30be968cd0175538966adf6d95d6778a14253a0e412?apiKey=2c0ef7d7caa24d8d8c04d3962010fc58&", iconSrc: "https://cdn.builder.io/api/v1/image/assets/1391f202a6104b468a8033acf7e36115/a90078884d5286afe0275ec2e5d1133738f2b4656d28c7f33ae9e5dd5654b295?apiKey=2c0ef7d7caa24d8d8c04d3962010fc58&" }
   ];
 
   return (
@@ -42,7 +43,7 @@ const Services: React.FC = () => {
           <span className="font-medium text-orange-400">Services</span>
         </h2>
         <p className="text-xl font-medium tracking-tight text-white w-[576px] max-md:max-w-full">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus nunc, posuere in justo vulputate, bibendum sodales
+        Sometimes all you need is a helping hand to get your marketing back on track, and that’s where my marketing consultancy services can help you. Whether your business is a startup, SME or large corporate firm
         </p>
       </div>
       <div className="flex z-0 flex-col items-center mt-24 w-full max-w-[1299px] max-md:mt-10 max-md:max-w-full">

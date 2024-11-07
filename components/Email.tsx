@@ -11,18 +11,7 @@ const ContactUs = () => {
         console.error('Form reference is null');
         return;
       }
-      // Proceed with sending the email
-    // try{
-    // emailjs.send('service_tldv0ba', 'template_n314jm9',{
-    //     publicKey:'ZYsFQxAoL-y-JRcX4',
-    // });
-    // }catch(error){
-    //     alert('Email not sent')
-
-    // }
-
-
-
+    
     emailjs
       .sendForm('service_tldv0ba', 'template_n314jm9', form.current!, {
         publicKey: 'ZYsFQxAoL-y-JRcX4',
@@ -38,6 +27,7 @@ const ContactUs = () => {
         },
         (error) => {
           console.log('FAILED...', error.text);
+          //alert('Email Not Sent');
         },
       );
   };

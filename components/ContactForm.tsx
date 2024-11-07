@@ -1,7 +1,7 @@
 'use client'
 import React, {useRef, useState} from 'react';
 import emailjs from '@emailjs/browser';
-import { env } from 'node:process';
+
 
 
 const ContactForm: React.FC = () => {
@@ -10,12 +10,7 @@ const ContactForm: React.FC = () => {
   const form = useRef<HTMLFormElement>(null);
   const sendEmail = (e: { preventDefault: () => void; }) => {
     e.preventDefault();
-    // if (!form.current) {
-    //   console.error('Form reference is null');
-    //   return ;
-    // }
-    // Proceed with sending the email
-
+    
     emailjs
       .send('service_tldv0ba', 'template_n314jm9', form.current!, {
         publicKey: process.env.PUBLIC_KEY,
@@ -44,18 +39,32 @@ const ContactForm: React.FC = () => {
             <div className="flex gap-2.5 justify-center items-center bg-orange-100 min-h-[58px] rounded-[50px]">
               <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/1391f202a6104b468a8033acf7e36115/0482c37642295008266da954111c085610a5f4fb7f5b681cdc38ecb77bd25333?apiKey=2c0ef7d7caa24d8d8c04d3962010fc58&" alt="" className="object-contain self-stretch my-auto w-8 aspect-square" />
             </div>
-            <label htmlFor="email" className="sr-only">Enter Email Address</label>
+            {/* <label htmlFor="email" className="sr-only">Enter Email Address</label> */}
             <input
               type="email"
               id="email"
-              value={email}
-              onChange={(e)=>setEmail(e.target.value)}
+              name='email'
               placeholder="Enter Email Address"
               className="my-auto text-xl font-medium tracking-tight text-black basis-auto bg-transparent border-none outline-none"
               aria-label="Enter Email Address"
             />
+            
+            
           </div>
-          <button type="submit" className="overflow-hidden gap-2.5 self-stretch px-10 py-5 my-auto text-xl font-medium tracking-tight text-white whitespace-nowrap bg-orange-400 rounded-[60px] max-md:px-5">
+          
+          <div className='mb-8 grid gap-2 '>
+              <label htmlFor="First Name" className=' mb-3 md:mb-0 text-gray-400 '>First Name</label>
+              <input type="text" aria-label='First Name' name="to_name" className=' mb-3 md:mb-0 bg-transparent border-none outline-none' placeholder='e.g Mike' id="" />
+              <label htmlFor="Last Name" className='text-gray-400 grid-cols-1  bg-transparent border-none outline-bottom'>Last Name</label>
+              <input type="text" name="last_name" className='grid-cols-1 w-11 bg-transparent border-none outline-none' placeholder='Jackson' id="" />
+
+          </div>
+          <div className='grid-rows-1 col-auto'>
+            <label htmlFor="message" className="sl-only">Enter Message</label>
+            <textarea/>
+          </div>
+          
+          <button type="submit" className="overflow-hidden gap-2.5 self-stretch px-10 py-5 my-auto text-xl font-medium tracking-tight text-white whitespace-nowrap bg-orange-400 rounded-[60px] bottom right-0 max-md:px-5">
             Send
           </button>
         </form>
