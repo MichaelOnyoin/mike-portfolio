@@ -7,8 +7,8 @@ interface ExperienceItemProps {
   role?: string;
   isActive: boolean;
 }
-
-const ExperienceItem: React.FC<ExperienceItemProps> = ({ company, location, period, role, isActive }) => (
+//isActive
+const ExperienceItem: React.FC<ExperienceItemProps> = ({ company, location, period, role  }) => (
   <div className="flex flex-col">
     <h3 className="text-4xl font-semibold tracking-tight text-slate-700">
       {company}, {location}

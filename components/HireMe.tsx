@@ -10,7 +10,7 @@ const HireMe: React.FC = () => {
             Why <span className="text-orange-400">Hire me</span>?
           </h2>
           <p className="mt-12 text-xl tracking-tight text-gray-400 max-md:mt-10 max-md:max-w-full">
-          Attempting to contribute in a creative,diligent, competent, persistent, and team-building manner to accomplish the organization's goals with the utmost care and integrity
+          Attempting to contribute in a creative,diligent, competent, persistent, and team-building manner to accomplish the organization&apos;s goals with the utmost care and integrity
           </p>
           <div className="flex flex-wrap gap-2.5 items-start mt-12 w-full max-md:mt-10 max-md:max-w-full">
             <div className="flex flex-col flex-1 shrink basis-0 min-w-[240px]">

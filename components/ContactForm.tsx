@@ -1,12 +1,13 @@
 'use client'
-import React, {useRef, useState} from 'react';
+import React, {useRef} from 'react';
 import emailjs from '@emailjs/browser';
+//import Image from 'next/image';
 
 
 
 const ContactForm: React.FC = () => {
   //form: RefObject<HTMLFormElement>
-  const [email,setEmail]=useState('');
+  
   const form = useRef<HTMLFormElement>(null);
   const sendEmail = (e: { preventDefault: () => void; }) => {
     e.preventDefault();
@@ -31,7 +32,7 @@ const ContactForm: React.FC = () => {
   return (
     <section className="flex overflow-hidden flex-col justify-center items-center py-24 w-full max-md:max-w-full" id='contact'>
       <h2 className="text-6xl font-semibold tracking-tighter text-center text-slate-700 max-md:max-w-full max-md:text-4xl">
-        Have an Awesome Project Idea? <span className="text-orange-400">Let's Discuss</span>
+        Have an Awesome Project Idea? <span className="text-orange-400">Let&apos;s Discuss</span>
       </h2>
       <div className="flex flex-col justify-center items-center mt-2.5 max-w-full w-[832px]">
         <form ref={form} onSubmit={sendEmail} className="flex flex-wrap gap-10 justify-between px-3.5 py-3 w-full border border-gray-200 border-solid max-w-[832px] min-h-[86px] rounded-[50px] max-md:max-w-full">

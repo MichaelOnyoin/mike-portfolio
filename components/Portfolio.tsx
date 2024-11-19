@@ -4,8 +4,8 @@ interface PortfolioItemProps {
   imageSrc: string;
   title: string;
 }
-
-const PortfolioItem: React.FC<PortfolioItemProps> = ({ imageSrc, title }) => (
+//imageSrc,
+const PortfolioItem: React.FC<PortfolioItemProps> = ({  title }) => (
   <div className="flex grow shrink gap-2.5 justify-center self-stretch p-2.5 my-auto bg-white rounded-3xl min-h-[371px] min-w-[240px] w-[506px] max-md:max-w-full">
     <div className="flex flex-col flex-1 shrink justify-between w-full basis-0 min-w-[240px] max-md:max-w-full">
       <div className="flex gap-2.5 items-start w-full max-md:max-w-full">
