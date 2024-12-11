@@ -12,8 +12,17 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      backgroundImage: {
+        'project-pattern': "url('/public/accounting-unsplash.jpg')",
+        'project2-pattern': "url('/public/events-unsplash.jpg')",
+      }
     },
   },
+  variants: {
+    extend: {
+        display: ["group-hover"],
+    },
+},
   plugins: [],
 };
 export default config;

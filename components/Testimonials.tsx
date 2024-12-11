@@ -36,6 +36,18 @@ const Testimonials: React.FC = () => {
       rating: 5
     },
     // Add more testimonials here if needed
+    {
+      content: "consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.Sed lobortis orci elementum egestas lobortis.Sed lobortis orci elementum egestas lobortis.",
+      author: "Jay Jamal",
+      role: "CTO, Lirante",
+      rating: 5
+    },
+    {
+      content: "consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.Sed lobortis orci elementum egestas lobortis.Sed lobortis orci elementum egestas lobortis.",
+      author: "Dr. James Okello",
+      role: "MD, HLB",
+      rating: 5
+    },
   ];
 
   return (

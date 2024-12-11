@@ -12,9 +12,9 @@ interface BlogPostProps {
 const BlogPost: React.FC<BlogPostProps> = ({ imageSrc, category, author, date, title }) => (
   <article className="flex flex-col min-w-[240px] w-[416px]">
     <div className="flex relative gap-2.5 items-start w-full max-w-[416px] shadow-[0px_4px_55px_rgba(0,0,0,0.05)]">
-      <img loading="lazy" src={imageSrc} alt={title} className="object-contain z-0 aspect-[0.96] min-w-[240px] w-[416px]" />
+      <img loading="lazy" src={imageSrc} alt={title} className="object-contain z-0 aspect-[0.96] min-w-[240px] w-[416px] hover:scale-110" />
       <div className="flex absolute right-0 bottom-0 z-0 gap-2.5 justify-center items-center px-5 bg-slate-800 h-[114px] min-h-[114px] rotate-[-1.570796370506285rad] rounded-[57px] w-[115px] max-md:px-5">
-        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/1391f202a6104b468a8033acf7e36115/f473f9dc59707305ecfa06ffd6686003431957b65e03aa55f1f864128fe449ad?apiKey=2c0ef7d7caa24d8d8c04d3962010fc58&" alt="" className="object-contain flex-1 shrink aspect-square basis-0 w-[72px]" />
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/1391f202a6104b468a8033acf7e36115/f473f9dc59707305ecfa06ffd6686003431957b65e03aa55f1f864128fe449ad?apiKey=2c0ef7d7caa24d8d8c04d3962010fc58&" alt="" className="object-contain flex-1 shrink aspect-square basis-0 w-[72px]" role='button' />
       </div>
     </div>
     <div className="overflow-hidden gap-2.5 self-start px-8 py-4 mt-9 text-xl text-black bg-gray-100 rounded-3xl max-md:px-5">

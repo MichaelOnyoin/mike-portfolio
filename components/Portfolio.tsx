@@ -3,27 +3,50 @@ import React from 'react';
 interface PortfolioItemProps {
   imageSrc: string;
   title: string;
+  description:string;
 }
 //imageSrc,
-const PortfolioItem: React.FC<PortfolioItemProps> = ({  title }) => (
-  <div className="flex grow shrink gap-2.5 justify-center self-stretch p-2.5 my-auto bg-white rounded-3xl min-h-[371px] min-w-[240px] w-[506px] max-md:max-w-full">
-    <div className="flex flex-col flex-1 shrink justify-between w-full basis-0 min-w-[240px] max-md:max-w-full">
-      <div className="flex gap-2.5 items-start w-full max-md:max-w-full">
-        <div className="flex gap-2.5 justify-center p-4 w-16 border border-orange-400 border-solid min-h-[64px] rotate-[-1.570796370506285rad] rounded-[60px]">
-          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/1391f202a6104b468a8033acf7e36115/c1ce4261a3ad5f803804e7445d5013e8bab76f7f292f05346f2bdf89c021074b?apiKey=2c0ef7d7caa24d8d8c04d3962010fc58&" alt="" className="object-contain flex-1 shrink w-full aspect-square basis-0" />
-        </div>
+const PortfolioItem: React.FC<PortfolioItemProps> = ({  title, imageSrc, description }) => (
+  <div className="flex grow shrink gap-2.5 justify-center self-stretch p-2.5 my-auto bg-white rounded-3xl min-h-[271px] min-w-[240px] w-[506px] max-md:max-w-full">
+    {/* bg-[url('/public/accounting-unsplash.jpg')] */}
+    <div className="flex flex-col flex-1 shrink justify-between w-full basis-0 min-w-[240px] min-h-screen max-md:max-w-full  ">
+      <div className="flex items-start relative flex-shrink-0 max-md:max-w-full">
+        <div className="flex gap-2.5 justify-center p-2 w-16 border border-orange-400 border-solid  rotate-15 rounded-[60px]">
+          
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/1391f202a6104b468a8033acf7e36115/c1ce4261a3ad5f803804e7445d5013e8bab76f7f292f05346f2bdf89c021074b?apiKey=2c0ef7d7caa24d8d8c04d3962010fc58&" alt="arrow button" className="object-contain flex-1 shrink w-full aspect-square basis-0 rounded-full" role='button' />
+          
+        </div>   
       </div>
-      <h3 className="gap-2.5 px-2.5 pt-16 pb-2.5 mt-36 max-w-full text-7xl font-bold tracking-tighter whitespace-nowrap min-h-[138px] text-stone-50 w-[593px] max-md:mt-10 max-md:text-4xl">
-        {title}
-      </h3>
+      <div className='relative flex-shrink-0 group'>
+       <img loading='lazy' src={imageSrc} className='rounded-lg w-full' alt='project-images'/>
+       <div className='absolute bottom-0 left-0 right-0 bg-gray-800 bg-opacity-50 p-4 mx-2 mb-4 float rounded-lg hidden group-hover:block'>
+        <h3 className="gap-2.5 px-2.5 pt-10 pb-2.5  max-w-full text-5xl font-bold tracking-tighter whitespace-nowrap min-h-[138px] text-white w-[593px] max-md:mt-10 max-md:text-4xl">
+          {title}
+        </h3>  
+        <p className="text-white text-lg">{description}</p>
+          
+      </div>
+      </div>
+      
     </div>
   </div>
 );
 
 const Portfolio: React.FC = () => {
   const portfolioItems = [
-    { imageSrc: "https://cdn.builder.io/api/v1/image/assets/1391f202a6104b468a8033acf7e36115/3b1c8f9a09754ee0acecc3af4f41e95fbe049c835f561c76215adcc580d21e54?apiKey=2c0ef7d7caa24d8d8c04d3962010fc58&", title: "Lirante" },
-    { imageSrc: "https://cdn.builder.io/api/v1/image/assets/1391f202a6104b468a8033acf7e36115/c156205109c5a1e3454218b5d4337b3f7cd901a80f52cb81e0fddd4f05d0aae4?apiKey=2c0ef7d7caa24d8d8c04d3962010fc58&", title: "Lirante" }
+     { imageSrc: "accounting-unsplash.jpg", 
+      title: "HLB Accounting", 
+      description:'creating a financial statement analysis for a company. This project would involve gathering the company`s financial data, such as income statements, balance sheets, and cash flow statements. The analysis would include calculating financial ratios, assessing the company`s financial performance, profitability, liquidity, and solvency.' },
+    // { imageSrc: "https://cdn.builder.io/api/v1/image/assets/1391f202a6104b468a8033acf7e36115/c156205109c5a1e3454218b5d4337b3f7cd901a80f52cb81e0fddd4f05d0aae4?apiKey=2c0ef7d7caa24d8d8c04d3962010fc58&", title: "Lirante" }
+    //{ imageSrc: "https://placehold.co/320x180", title: "LirApp" },
+    { imageSrc: "Marketing-1024x1024.jpg",
+       title: "Digital Marketing",
+        description:'This project would involve conducting market research to identify target audiences, analyzing competitors, setting marketing objectives, creating a marketing strategy, designing promotional materials, determining the marketing channels to use (such as social media, email, or advertising),' },
+    
+        // { imageSrc: "events-unsplash.jpg", 
+        //   title: "HLB Accounting", 
+        //   description:'creating a financial statement analysis for a company. This project would involve gathering the company&apos;s financial data, such as income statements, balance sheets, and cash flow statements. The analysis would include calculating financial ratios, assessing the company&apos;s financial performance, profitability, liquidity, and solvency.' },
+      
   ];
 
   return (
@@ -65,7 +88,7 @@ const Portfolio: React.FC = () => {
               Lirante - Food Delivery Solution
             </h3>
             <div className="flex gap-2.5 justify-center items-center px-3 bg-orange-400 border-2 border-orange-400 border-solid h-[58px] min-h-[58px] rotate-[-1.570796370506285rad] rounded-[60px] w-[58px]">
-              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/1391f202a6104b468a8033acf7e36115/9ae7a72f372960b5a51eefa4929239e41a547aed319630a96df61c89249a86d1?apiKey=2c0ef7d7caa24d8d8c04d3962010fc58&" alt="" className="object-contain flex-1 shrink aspect-square basis-0 w-[34px]" />
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/1391f202a6104b468a8033acf7e36115/9ae7a72f372960b5a51eefa4929239e41a547aed319630a96df61c89249a86d1?apiKey=2c0ef7d7caa24d8d8c04d3962010fc58&" alt="" className="object-contain flex-1 shrink aspect-square basis-0 w-[34px]" role='button' />
             </div>
           </div>
           <p className="self-start mt-6 text-xl tracking-tight text-center text-slate-700 max-md:max-w-full">

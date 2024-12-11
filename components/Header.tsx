@@ -5,7 +5,7 @@ interface HeaderProps {
 }
 
 const Header: React.FC<HeaderProps> = ({ activeTab }) => {
-  const tabs = ['Home', 'About', 'Service', 'Resume', 'Project', 'Contact'];
+  const tabs = ['Home', 'About', 'Services', 'Resume', 'Projects', 'Contact'];
 
   return (
     <header className="flex relative flex-col items-center self-center w-full max-md:max-w-full">
@@ -13,7 +13,7 @@ const Header: React.FC<HeaderProps> = ({ activeTab }) => {
         {tabs.map((tab) => (
           <a
             key={tab}
-            href={`#${tab.toLowerCase()}`}
+            href={`/${tab.toLowerCase()}`}
             className={`overflow-hidden gap-2.5 self-stretch px-10 py-5 my-auto text-xl hover:bg-orange-500 ${
               activeTab === tab.toLowerCase()
                 ? 'font-bold bg-orange-400'

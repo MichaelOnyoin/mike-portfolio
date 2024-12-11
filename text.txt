@@ -1,0 +1,1 @@
+creating a financial statement analysis for a company. This project would involve gathering the companys financial data, such as income statements, balance sheets, and cash flow statements. The analysis would include calculating financial ratios, assessing the companys financial performance, profitability, liquidity, and solvency. 

@@ -1,14 +1,18 @@
 'use client'
+//import Layout from '@/components/Layout';
 import React, {useRef} from 'react';
 import emailjs from '@emailjs/browser';
 
-//import Image from 'next/image';
+export default function Contact(){
+    const whatsappNumber = "+256774350388"; // Replace with your WhatsApp number
+
+   const sendWhatsAppMessage = () => {
+    const message = "Hello, I would like to get in touch!"; // Customize your message
+    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url, "_blank");
+  };
 
 
-
-const ContactForm: React.FC = () => {
-  //form: RefObject<HTMLFormElement>
-  
   const form = useRef<HTMLFormElement>(null);
   const sendEmail = (e: { preventDefault: () => void; }) => {
     e.preventDefault();
@@ -27,12 +31,25 @@ const ContactForm: React.FC = () => {
         (error) => {
           console.log('FAILED...', error.text);
         },)};
+    return (
+        <div>
+           
+                <section className="flex flex-col items-center py-16">
+                    <h1 className="text-6xl font-semibold tracking-tight text-slate-700 mb-8">Contact Me</h1>
+                    <p className="text-xl text-gray-500 mb-12">
+                    We would love to hear from you! Please fill out the form below or reach out via WhatsApp.
+                    </p>
+                    
+                    {/* <ContactForm /> */}
 
-  
-
-  return (
-    <section className="flex overflow-hidden flex-col justify-center items-center py-24 w-full max-md:max-w-full" id='contact'>
-      <h2 className="text-6xl font-semibold tracking-tighter text-center text-slate-700 max-md:max-w-full max-md:text-4xl">
+                    
+                    <div className="mt-12">
+                    <button color="self-start px-14 py-8 mt-12 text-3xl font-semibold tracking-tight border border-solid border-neutral-900 rounded-[32px] text-neutral-900 hover:bg-orange-500 max-md:px-5 max-md:mt-10" onClick={sendWhatsAppMessage}>
+                        Send Message on WhatsApp
+                    </button>
+                    </div>
+                </section>
+                <h2 className="text-6xl font-semibold tracking-tighter text-center text-slate-700 max-md:max-w-full max-md:text-4xl">
         Have an Awesome Project Idea? <span className="text-orange-400">Let&apos;s Discuss</span>
       </h2>
       <div className="flex flex-col justify-center items-center mt-2.5 max-w-full w-[832px]">
@@ -54,17 +71,7 @@ const ContactForm: React.FC = () => {
              
           </div>
           
-          {/* <div className='mb-8 grid gap-2 '>
-              <label htmlFor="First Name" className=' mb-3 md:mb-0 text-gray-400 '>First Name</label>
-              <input type="text" aria-label='First Name' name="to_name" className=' mb-3 md:mb-0 bg-transparent border-none outline-none' placeholder='e.g Mike' id="" />
-              <label htmlFor="Last Name" className='text-gray-400 grid-cols-1  bg-transparent border-none outline-bottom'>Last Name</label>
-              <input type="text" name="last_name" className='grid-cols-1 w-11 bg-transparent border-none outline-none' placeholder='Jackson' id="" />
-
-          </div>
-          <div className='grid-rows-1 col-auto'>
-            <label htmlFor="message" className="sl-only">Enter Message</label>
-            <textarea/>
-          </div> */}
+        
           
           <button type="submit" className="overflow-hidden gap-2.5 self-stretch px-10 py-5 my-auto text-xl font-medium tracking-tight text-white whitespace-nowrap bg-orange-400 rounded-[60px] bottom right-0 max-md:px-5">
             Send
@@ -85,8 +92,8 @@ const ContactForm: React.FC = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
-};
 
-export default ContactForm;
+           
+        </div>
+    )
+}

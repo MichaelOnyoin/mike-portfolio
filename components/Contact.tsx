@@ -49,7 +49,7 @@ export function Contact() {
       <div className="container mx-auto mb-20 text-center">
         {/*@ts-expect-error: Typography error  */ }
         <Typography variant="h1" color="blue-gray" className="mb-4" >
-          Contact Us
+          Contact Me
         </Typography>
         {/*@ts-expect-error: Typography error */}
         <Typography
