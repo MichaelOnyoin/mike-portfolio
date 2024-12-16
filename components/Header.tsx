@@ -5,7 +5,7 @@ interface HeaderProps {
 }
 
 const Header: React.FC<HeaderProps> = ({ activeTab }) => {
-  const tabs = ['Home', 'About', 'Services', 'Resume', 'Projects', 'Contact'];
+  const tabs = ['Home', 'About', 'Services','Shop', 'Resume', 'Projects', 'Contact'];
 
   return (
     <header className="flex relative flex-col items-center self-center w-full max-md:max-w-full">

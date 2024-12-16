@@ -50,6 +50,7 @@ const ContactForm: React.FC = () => {
               className="my-auto text-xl font-medium tracking-tight text-black basis-auto bg-transparent border-none outline-none"
               aria-label="Enter Email Address"
             />
+            <input type="hidden" name="" />
             
              
           </div>
