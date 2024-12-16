@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "next/link";
 //import { PDFCanvas } from "@/components/PDFCanvas";
-import { Head, NextScript, Main, Html } from "next/document";
 
 export default function Project(){
     return (
@@ -18,13 +17,7 @@ export default function Project(){
             {/*<PDFCanvas>
                 <
             <PDFCanvas/> */}
-             <Html lang="en">
-                <Head />
-                <body>
-                    <Main />
-                    <NextScript />
-                </body>
-             </Html>
+             
             
         </div>
     )
