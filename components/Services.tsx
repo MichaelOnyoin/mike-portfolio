@@ -15,6 +15,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, imageSrc, iconSrc }) =
           <h3 className="flex-1 shrink px-9 w-full max-md:px-5">{title}</h3>
           <div className="mt-6 max-w-full border-2 border-solid border-gray-50 border-opacity-30 min-h-[2px] w-[416px] " />
         </div>
+        {/*  */}
         <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/1391f202a6104b468a8033acf7e36115/20b7cf86852084f29c378734cac0ab0547ce9433bb4bdbd6ae777d8d20e61349?apiKey=2c0ef7d7caa24d8d8c04d3962010fc58&" alt="" className="object-contain mt-12 w-full aspect-[1.19] max-md:mt-10" />
       </div>
     </div>
@@ -33,7 +34,7 @@ const Services: React.FC = () => {
   ];
 
   return (
-    <section className="flex overflow-hidden relative flex-col items-center pt-28 pr-16 pb-14 pl-16 w-full bg-neutral-900 min-h-[878px] rounded-[50px] mt-10 max-md:px-5 max-md:pt-24 max-md:max-w-full">
+    <section className="flex overflow-hidden relative flex-col items-center pt-28 pr-16 pb-14 pl-16 w-full bg-neutral-900 min-h-[878px] rounded-[50px] mt-10 mb-10 max-md:px-5 max-md:pt-24 max-md:max-w-full">
       <div className="flex overflow-hidden absolute inset-x-0 bottom-0 z-0 flex-col self-start px-20 pt-36 w-full h-[828px] max-md:pt-24 max-md:pl-5">
         <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/1391f202a6104b468a8033acf7e36115/964419d3b808d99db98a3f6dea6d199a513bac6a3589d6316fb862517ec94271?apiKey=2c0ef7d7caa24d8d8c04d3962010fc58&" alt="Background design" className="object-contain max-w-full aspect-[0.71] w-[486px]" />
       </div>

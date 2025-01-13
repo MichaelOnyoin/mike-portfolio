@@ -61,6 +61,25 @@ export function ServiceCard() {
                 <button className="mt-2 text-white px-4 py-2 rounded bg-orange-400">Buy Service</button>
             </div>
         </div>
+        <div className="max-w-4xl mx-auto bg-white border border-gray-300 rounded-lg shadow-md p-4 mb-6 flex items-center space-x-4 ">
+            <img src="events.avif" alt="Image of grass representing lawn mowing service" className="w-56 h-56 rounded-full object-cover" />
+            <div className="flex-1">
+                <h2 className="text-xl font-semibold">Event Planning</h2>
+                <p className="text-slate-700 text-lg">
+                Are you ready to turn your vision into a memorable event that leaves everyone talking? I specialize in creating seamless, stress-free experiences for any occasion—be it weddings, corporate events, birthday parties, or grand celebrations.
+
+                From concept to execution, I handle every detail: venue selection, décor, logistics, entertainment, and more. My goal is simple—to bring your ideas to life while ensuring everything runs smoothly, on time, and within budget.
+                 </p>
+            </div>
+            <div className="text-right px-4">
+                <div className="text-xl font-semibold">$30.00</div>
+                <div className="text-gray-500 text-lg flex items-right">
+                    <Calendar className="h-6 w-6 mr-6"/> 
+                    Duration
+                </div>
+                <button className="mt-2 text-white px-4 py-2 rounded bg-orange-400">Buy Service</button>
+            </div>
+        </div>
       </div>
     );
 }

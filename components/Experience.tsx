@@ -20,13 +20,13 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({ company, location, peri
 
 const Experience: React.FC = () => {
   const experiences = [
-    { company: "Coach Coegi", location: "India (Remote)", period: "Nov 2022- to Date", role: "Virtual Assitant", isActive: true },
+    { company: "Coach Coegi", location: "India (Remote)", period: "Nov 2022- to Date", role: "Virtual Assistant", isActive: true },
     { company: "HLB Jim Roberts", location: "Kampala", period: "Sep 2024- to Date", role: "Digital Marketer/ Accountant", isActive: false },
     { company: "Penghis Ltd", location: "Kampala", period: "Feb 2021- Nov 2023 ", role: "Project Coordinator", isActive: true }
   ];
 
   return (
-    <section className="flex overflow-hidden flex-col px-16 w-full min-h-[827px] max-md:px-5 max-md:max-w-full">
+    <section className="flex overflow-hidden flex-col px-16 w-full min-h-[827px] mb-10 max-md:px-5 max-md:max-w-full">
       <h2 className="gap-2.5 self-stretch py-20 w-full text-6xl tracking-tighter leading-none text-slate-700 max-md:max-w-full max-md:text-4xl">
         <span className="font-medium">My </span>
         <span className="font-medium text-orange-400">Work Experience</span>
@@ -55,9 +55,19 @@ const Experience: React.FC = () => {
               <h3 className="text-4xl font-semibold tracking-tight leading-none text-slate-700">
                 {exp.role}
               </h3>
-              {index < 2 && (
+              {index == 1 && (
                 <p className="mt-3.5 text-xl font-medium tracking-tight text-gray-400 max-md:max-w-full">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus nunc, posuere in justo vulputate, bibendum sodales
+                 I oversee and manage marketing strategies for a company or product.
+                </p>
+              )}
+              {index == 2 && (
+                <p className="mt-3.5 text-xl font-medium tracking-tight text-gray-400 max-md:max-w-full">
+                  Assisting the project manager and team in organizing, executing, and delivering projects effectively, ensuring that all aspects of a project run smoothly, are on schedule, and meet the set objectives.
+                </p>
+              )}
+              {index == 0 && (
+                <p className="mt-3.5 text-xl font-medium tracking-tight text-gray-400 max-md:max-w-full">
+                 I provide administrative, technical, creative, or specialized support services to businesses or individuals remotely.
                 </p>
               )}
             </div>
