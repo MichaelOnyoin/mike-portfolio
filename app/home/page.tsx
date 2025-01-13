@@ -1,4 +1,4 @@
-import Layout from '@/components/Layout';
+//import Layout from '@/components/Layout';
 import Hero from '@/components/Hero';
 import Services from '@/components/Services';
 import Experience from '@/components/Experience';
@@ -10,7 +10,7 @@ import Marquee from '@/components/Marquee';
 import Call from '@/components/Call';
 export default function Home() {
   return (
-    <Layout>
+    <div>
       <Hero />
       <Services />
       <Experience />
@@ -20,6 +20,6 @@ export default function Home() {
       <Call/>
       <Marquee/>
       <BlogPosts />
-    </Layout>
+    </div>
   );
 }

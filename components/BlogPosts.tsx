@@ -38,21 +38,21 @@ const BlogPosts: React.FC = () => {
   const blogPosts = [
     {
       imageSrc: "https://cdn.builder.io/api/v1/image/assets/1391f202a6104b468a8033acf7e36115/3b1c8f9a09754ee0acecc3af4f41e95fbe049c835f561c76215adcc580d21e54?apiKey=2c0ef7d7caa24d8d8c04d3962010fc58&",
-      category: "UI/ UX Design",
+      category: "Digital Marketing",
       author: "Jayesh Patil",
       date: "10 Nov, 2023",
-      title: "Design Unraveled: Behind the Scenes of UI/UX Magic"
+      title: "Market Unraveled: Behind the Scenes of Digital Marketing"
     },
     {
       imageSrc: "https://cdn.builder.io/api/v1/image/assets/1391f202a6104b468a8033acf7e36115/c156205109c5a1e3454218b5d4337b3f7cd901a80f52cb81e0fddd4f05d0aae4?apiKey=2c0ef7d7caa24d8d8c04d3962010fc58&",
-      category: "App Design",
+      category: "Accounting",
       author: "Jayesh Patil",
       date: "09 Oct, 2023",
       title: "Sugee: Loan Management System for Rural Sector."
     },
     {
       imageSrc: "https://cdn.builder.io/api/v1/image/assets/1391f202a6104b468a8033acf7e36115/6041be116a9e02c26c7eff4cff3061e34153ea7f3793add42c860e02cbcb4fa0?apiKey=2c0ef7d7caa24d8d8c04d3962010fc58&",
-      category: "App Design",
+      category: "Social Media",
       author: "Jayesh Patil",
       date: "13 Aug, 2023",
       title: "Cinetrade: Innovative way to invest in Digital Media"

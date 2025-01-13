@@ -30,22 +30,22 @@ const Testimonial: React.FC<TestimonialProps> = ({ content, author, role, rating
 const Testimonials: React.FC = () => {
   const testimonials = [
     {
-      content: "consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.Sed lobortis orci elementum egestas lobortis.Sed lobortis orci elementum egestas lobortis.",
-      author: "Jayesh Patil",
+      content: "Hiring Mariam to manage our digital marketing was one of the best decisions we've made. She completely revamped our online presence, crafted campaigns that resonated with our audience, and dramatically increased our leads and sales. If you want real results, look no further than Mariam!",
+      author: "Jayesh Patil",//Sarah P., E-commerce Entrepreneur
       role: "CEO, Lirante",
       rating: 5
     },
     // Add more testimonials here if needed
     {
-      content: "consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.Sed lobortis orci elementum egestas lobortis.Sed lobortis orci elementum egestas lobortis.",
+      content: "Working with Mariam for our accounting needs has been a game-changer for our business. They not only streamlined our bookkeeping but also provided invaluable insights into tax planning and financial forecasting. Thanks to their expertise, we've saved both time and money while gaining a clearer picture of our company's financial health. I highly recommend their services to anyone looking for a knowledgeable and reliable accountant  --Alexandra M., Business Owner",
       author: "Jay Jamal",
       role: "CTO, Lirante",
       rating: 5
     },
     {
-      content: "consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.Sed lobortis orci elementum egestas lobortis.Sed lobortis orci elementum egestas lobortis.",
-      author: "Dr. James Okello",
-      role: "MD, HLB",
+      content: "I was feeling stuck and overwhelmed in my career until I started coaching sessions with Mariam. Their thoughtful guidance and actionable strategies helped me set clear goals and finally take the steps I needed to advance. Every session felt tailored to my needs, I'm now thriving in ways I never imagined. Thank you, Mariam!",
+      author: "Dr. Michael Thompson",
+      role: "Marketing Professional",
       rating: 5
     },
   ];
@@ -57,7 +57,7 @@ const Testimonials: React.FC = () => {
           Testimonials That Speak to <span className="text-orange-400">My Results</span>
         </h2>
         <p className="z-0 self-center mt-3.5 text-xl tracking-tight text-gray-50 max-md:max-w-full">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.
+        See for yourself what my former clients say about my work and testify on my behalf about their satisfaction.
         </p>
         <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/1391f202a6104b468a8033acf7e36115/f5327575cf9fa5bf9ea692db7da40c258a53cfbe43e6c27e1d53f96324df7744?apiKey=2c0ef7d7caa24d8d8c04d3962010fc58&" alt="" className="object-contain absolute z-0 w-7 aspect-[0.97] h-[29px] right-[421px] top-[-9px]" />
         <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/1391f202a6104b468a8033acf7e36115/6c2a80615f90fb38a6ee0a66c759dd9f25f8d2d139144360ff02f38bdf215cf4?apiKey=2c0ef7d7caa24d8d8c04d3962010fc58&" alt="" className="object-contain absolute z-0 aspect-square bottom-[65px] h-[25px] right-[238px] w-[26px]" />
