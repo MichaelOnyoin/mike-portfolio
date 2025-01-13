@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
         <div className="flex flex-col justify-between items-start min-h-[239px] min-w-[240px] w-[635px] max-md:max-w-full">
          
           <p className="self-stretch mt-9 text-xl tracking-tight text-gray-50 max-md:max-w-full">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.
+          I wanted to let you know that if you need to get in touch with me for any questions or updates, you can easily reach out via the contact page. It&apos;s the quickest and most efficient way for us to communicate, and I&apos;ll be able to assist you faster there.
           </p>
           <div className="flex gap-1.5 items-start mt-9">
             
@@ -66,7 +66,7 @@ const Footer: React.FC = () => {
       </div>
       {/* <img loading="lazy" src="https://cdn.builder.io/api/v1/img/assets/1391f202a6104b468a8033acf7e36115/a86fb62869fcd47fde219128eb253c9bcf8d32d8bb11d07493e6939321571cb1?apiKey=2c0ef7d7caa24d8d8c04d3962010fc58&" alt="Decorative line" className="object-contain mt-14 w-full aspect-[500] max-md:mt-10 max-md:max-w-full" /> */}
       <div className="flex flex-wrap gap-10 items-start mt-14 w-full text-xl tracking-tight text-white max-md:mt-10 max-md:max-w-full">
-        <p>Copyright© 2024 Michael. All Rights Reserved.</p>
+        <p>Copyright© 2025 Michael. All Rights Reserved.</p>
         <p>User Terms & Conditions | Privacy Policy</p>
       </div>
     </footer>
