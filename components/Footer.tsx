@@ -30,12 +30,12 @@ const Footer: React.FC = () => {
         </div>
         <nav className="flex flex-col">
           <h3 className="text-xl font-semibold tracking-tight text-orange-400">Navigation</h3>
-          <ul className="flex flex-col self-start mt-7 text-base tracking-tight text-gray-50">
-            <li><a href="#home">Home</a></li>
-            <li className="mt-5"><a href="#about">About Us</a></li>
-            <li className="mt-5"><a href="#service">Service</a></li>
-            <li className="mt-5"><a href="#resume">Resume</a></li>
-            <li className="mt-5"><a href="#project">Project</a></li>
+          <ul className="flex flex-col self-start mt-7 text-base tracking-tight text-gray-50 ">
+            <li className='hover:underline'><a href="#home">Home</a></li>
+            <li className="mt-5 hover:underline"><a href="#about">About Us</a></li>
+            <li className="mt-5 hover:underline"><a href="#service">Service</a></li>
+            <li className="mt-5 hover:underline"><a href="#resume">Resume</a></li>
+            <li className="mt-5 hover:underline"><a href="#project">Project</a></li>
           </ul>
         </nav>
         <div className="flex flex-col">

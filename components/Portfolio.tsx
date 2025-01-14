@@ -92,7 +92,7 @@ const Portfolio: React.FC = () => {
             </div>
           </div>
           <p className="self-start mt-6 text-xl tracking-tight text-center text-slate-700 max-md:max-w-full">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.
+          Marketing and accounting are two critical functions that, when aligned, drive the success of a business. Marketing focuses on creating awareness, generating demand, and building customer relationships, while accounting ensures that financial resources are efficiently managed and allocated. The synergy between these areas is vital: marketing efforts need a clear budget, and accounting provides insights into spending effectiveness and ROI.
           </p>
         </div>
       </div>
